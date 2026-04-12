@@ -131,6 +131,7 @@ export default function KakeiboPage() {
           </div>
         )}
       </div>
+      </div>
     </div>
   )
 }
