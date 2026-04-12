@@ -136,7 +136,7 @@ export default function KakeiboPage() {
           <p style={{fontSize:'0.75rem',fontWeight:500,color:'#a8a29e',letterSpacing:'0.04em'}}>お金を増やすヒント</p>
 
           {/* DMM FX */}
-          <a href="https://px.a8.net/svt/ejp?a8mat=3Z4KXY+XXXXXX+XXXX+XXXX" rel="nofollow" target="_blank"
+          <a href="https://px.a8.net/svt/ejp?a8mat=4AZR8U+D2XWAA+1WP2+6CHB7" rel="nofollow" target="_blank"
             style={{display:'flex',alignItems:'center',gap:'0.75rem',padding:'0.875rem',background:'#fff',border:'1px solid #f0ede8',borderRadius:'0.75rem',textDecoration:'none'}}>
             <div style={{width:'40px',height:'40px',borderRadius:'0.5rem',background:'#1c1917',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}>
               <span style={{fontSize:'1.25rem'}}>📈</span>
