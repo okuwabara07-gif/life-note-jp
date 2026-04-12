@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { createClient } from '@/lib/supabase/client'
+import Image from 'next/image'
 
 const supabase = createClient()
 
@@ -50,11 +51,26 @@ export default function KakeiboPage() {
   const grouped = txns.reduce((acc:any,t)=>{acc[t.date]=[...(acc[t.date]??[]),t];return acc},{})
 
   return (
-    <div style={{padding:'1.5rem 1rem 0',display:'flex',flexDirection:'column',gap:'1rem'}}>
-      <div style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
-        <h1 style={{fontSize:'1.25rem',fontWeight:700,color:'#1c1917'}}>家計簿</h1>
-        <button onClick={()=>setShowForm(true)} style={{background:'#fbbf24',color:'#fff',borderRadius:'50%',width:'36px',height:'36px',border:'none',fontSize:'1.25rem',cursor:'pointer',display:'flex',alignItems:'center',justifyContent:'center'}}>+</button>
+    <div style={{display:'flex',flexDirection:'column',gap:'0'}}>
+
+      {/* ヒーロー画像 */}
+      <div style={{position:'relative',width:'100%',height:'160px',overflow:'hidden'}}>
+        <Image
+          src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&q=80"
+          alt="家計簿・お金の管理"
+          fill
+          style={{objectFit:'cover',objectPosition:'center 40%'}}
+        />
+        <div style={{position:'absolute',inset:0,background:'rgba(0,0,0,0.45)'}} />
+        <div style={{position:'absolute',inset:0,display:'flex',flexDirection:'column',justifyContent:'flex-end',padding:'1rem'}}>
+          <div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-end'}}>
+            <h1 style={{fontSize:'1.25rem',fontWeight:700,color:'#fff',margin:0}}>家計簿</h1>
+            <button onClick={()=>setShowForm(true)} style={{background:'#fbbf24',color:'#fff',borderRadius:'50%',width:'36px',height:'36px',border:'none',fontSize:'1.25rem',cursor:'pointer',display:'flex',alignItems:'center',justifyContent:'center'}}>+</button>
+          </div>
+        </div>
       </div>
+
+    <div style={{padding:'1rem',display:'flex',flexDirection:'column',gap:'1rem'}}>
       <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:'0.5rem'}}>
         {[{label:'収入',val:income,color:'#16a34a'},{label:'支出',val:expense,color:'#dc2626'},{label:'収支',val:income-expense,color:income-expense>=0?'#1c1917':'#dc2626'}].map(m=>(
           <div key={m.label} className="card" style={{textAlign:'center',padding:'0.75rem'}}>

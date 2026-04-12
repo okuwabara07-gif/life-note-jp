@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { createClient } from '@/lib/supabase/client'
+import Image from 'next/image'
 
 const supabase = createClient()
 const ICONS = ['✅','🏃','📚','💧','🧘','🍎','💪','🌅','✍️','🎯','😴','🚴']
@@ -76,12 +77,25 @@ export default function HabitsPage() {
   const totalCount = habits.length
 
   return (
-    <div style={{padding:'1.5rem 1rem 0',display:'flex',flexDirection:'column',gap:'1rem'}}>
-      <div style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
-        <div>
-          <h1 style={{fontSize:'1.25rem',fontWeight:700,color:'#1c1917'}}>習慣トラッカー</h1>
-          {totalCount>0&&<p style={{fontSize:'0.75rem',color:'#a8a29e',marginTop:'0.125rem'}}>今日 {doneCount}/{totalCount} 完了</p>}
+    <div style={{display:'flex',flexDirection:'column',gap:'0'}}>
+
+      {/* ヒーロー画像 */}
+      <div style={{position:'relative',width:'100%',height:'160px',overflow:'hidden'}}>
+        <Image
+          src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=80"
+          alt="習慣トラッカー"
+          fill
+          style={{objectFit:'cover',objectPosition:'center 30%'}}
+        />
+        <div style={{position:'absolute',inset:0,background:'rgba(0,0,0,0.45)'}} />
+        <div style={{position:'absolute',inset:0,display:'flex',flexDirection:'column',justifyContent:'flex-end',padding:'1rem'}}>
+          <h1 style={{fontSize:'1.25rem',fontWeight:700,color:'#fff',margin:'0 0 2px'}}>習慣トラッカー</h1>
+          {totalCount>0&&<p style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.75)',margin:0}}>今日 {doneCount}/{totalCount} 完了</p>}
         </div>
+      </div>
+
+      <div style={{padding:'1rem',display:'flex',flexDirection:'column',gap:'1rem'}}>
+      <div style={{display:'flex',justifyContent:'flex-end'}}>
         <button onClick={()=>setShowForm(true)} style={{background:'#fbbf24',color:'#fff',borderRadius:'50%',width:'36px',height:'36px',border:'none',fontSize:'1.25rem',cursor:'pointer',display:'flex',alignItems:'center',justifyContent:'center'}}>+</button>
       </div>
       {totalCount>0&&(
