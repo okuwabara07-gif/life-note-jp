@@ -157,6 +157,38 @@ export default function HabitsPage() {
             <button onClick={()=>setShowForm(true)} style={{background:'#f5f5f4',color:'#44403c',borderRadius:'0.75rem',padding:'0.5rem 1.5rem',fontSize:'0.875rem',fontWeight:500,border:'none',cursor:'pointer'}}>最初の習慣を追加</button>
           </div>
         )}
+
+        {/* アフィリエイト：習慣を加速するグッズ */}
+        <div style={{marginTop:'1.5rem',display:'flex',flexDirection:'column',gap:'0.625rem'}}>
+          <p style={{fontSize:'0.75rem',fontWeight:500,color:'#a8a29e',letterSpacing:'0.04em'}}>習慣を加速するグッズ</p>
+
+          <a href={`https://www.amazon.co.jp/s?k=習慣+トラッカー+手帳&tag=haircolorab22-22`} rel="nofollow" target="_blank"
+            style={{display:'flex',alignItems:'center',gap:'0.75rem',padding:'0.875rem',background:'#fff',border:'1px solid #f0ede8',borderRadius:'0.75rem',textDecoration:'none'}}>
+            <div style={{width:'40px',height:'40px',borderRadius:'0.5rem',background:'#FF9900',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}>
+              <span style={{fontSize:'1.25rem'}}>📓</span>
+            </div>
+            <div style={{flex:1}}>
+              <p style={{fontSize:'0.8125rem',fontWeight:600,color:'#1c1917',margin:'0 0 2px'}}>習慣トラッカー手帳 — 紙でも記録</p>
+              <p style={{fontSize:'0.6875rem',color:'#a8a29e',margin:0}}>デジタルと紙の併用でより継続しやすくなる</p>
+            </div>
+            <span style={{fontSize:'0.75rem',color:'#d97706',fontWeight:500,flexShrink:0}}>Amazon →</span>
+          </a>
+
+          <a href={`https://www.amazon.co.jp/s?k=タイマー+勉強+習慣&tag=haircolorab22-22`} rel="nofollow" target="_blank"
+            style={{display:'flex',alignItems:'center',gap:'0.75rem',padding:'0.875rem',background:'#fff',border:'1px solid #f0ede8',borderRadius:'0.75rem',textDecoration:'none'}}>
+            <div style={{width:'40px',height:'40px',borderRadius:'0.5rem',background:'#1c1917',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}>
+              <span style={{fontSize:'1.25rem'}}>⏱️</span>
+            </div>
+            <div style={{flex:1}}>
+              <p style={{fontSize:'0.8125rem',fontWeight:600,color:'#1c1917',margin:'0 0 2px'}}>タイムタイマー — 集中が続く</p>
+              <p style={{fontSize:'0.6875rem',color:'#a8a29e',margin:0}}>読書・運動・勉強の時間管理に最適</p>
+            </div>
+            <span style={{fontSize:'0.75rem',color:'#d97706',fontWeight:500,flexShrink:0}}>Amazon →</span>
+          </a>
+
+          <p style={{fontSize:'0.625rem',color:'#d6d3d1',textAlign:'center',marginTop:'0.25rem'}}>※ 広告を含みます</p>
+        </div>
+
       </div>
       </div>
     </div>

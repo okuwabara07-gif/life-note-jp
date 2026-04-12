@@ -130,6 +130,53 @@ export default function KakeiboPage() {
             <p style={{fontSize:'0.75rem',color:'#d6d3d1',marginTop:'0.25rem'}}>右上の＋から追加しよう</p>
           </div>
         )}
+
+        {/* アフィリエイト：お金を増やすおすすめ */}
+        <div style={{marginTop:'1.5rem',display:'flex',flexDirection:'column',gap:'0.625rem'}}>
+          <p style={{fontSize:'0.75rem',fontWeight:500,color:'#a8a29e',letterSpacing:'0.04em'}}>お金を増やすヒント</p>
+
+          {/* DMM FX */}
+          <a href="https://px.a8.net/svt/ejp?a8mat=3Z4KXY+XXXXXX+XXXX+XXXX" rel="nofollow" target="_blank"
+            style={{display:'flex',alignItems:'center',gap:'0.75rem',padding:'0.875rem',background:'#fff',border:'1px solid #f0ede8',borderRadius:'0.75rem',textDecoration:'none'}}>
+            <div style={{width:'40px',height:'40px',borderRadius:'0.5rem',background:'#1c1917',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}>
+              <span style={{fontSize:'1.25rem'}}>📈</span>
+            </div>
+            <div style={{flex:1}}>
+              <p style={{fontSize:'0.8125rem',fontWeight:600,color:'#1c1917',margin:'0 0 2px'}}>DMM FX — 口座開設で最大30万円キャッシュバック</p>
+              <p style={{fontSize:'0.6875rem',color:'#a8a29e',margin:0}}>取引コスト最安水準 · 初心者サポート充実</p>
+            </div>
+            <span style={{fontSize:'0.75rem',color:'#d97706',fontWeight:500,flexShrink:0}}>無料 →</span>
+          </a>
+
+          {/* 楽天証券 */}
+          <a href="https://hb.afl.rakuten.co.jp/ichiba/XXXXXXXXX/?pc=https%3A%2F%2Fwww.rakuten-sec.co.jp%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwiY29sIjoxfQ%3D%3D" rel="nofollow" target="_blank"
+            style={{display:'flex',alignItems:'center',gap:'0.75rem',padding:'0.875rem',background:'#fff',border:'1px solid #f0ede8',borderRadius:'0.75rem',textDecoration:'none'}}>
+            <div style={{width:'40px',height:'40px',borderRadius:'0.5rem',background:'#dc2626',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}>
+              <span style={{fontSize:'1.25rem'}}>💹</span>
+            </div>
+            <div style={{flex:1}}>
+              <p style={{fontSize:'0.8125rem',fontWeight:600,color:'#1c1917',margin:'0 0 2px'}}>楽天証券 — NISAで資産を増やす</p>
+              <p style={{fontSize:'0.6875rem',color:'#a8a29e',margin:0}}>口座開設無料 · 楽天ポイントで投資できる</p>
+            </div>
+            <span style={{fontSize:'0.75rem',color:'#d97706',fontWeight:500,flexShrink:0}}>無料 →</span>
+          </a>
+
+          {/* 節約系 */}
+          <a href="https://px.a8.net/svt/ejp?a8mat=3Z4KXY+YYYYYY+YYYY+YYYY" rel="nofollow" target="_blank"
+            style={{display:'flex',alignItems:'center',gap:'0.75rem',padding:'0.875rem',background:'#fff',border:'1px solid #f0ede8',borderRadius:'0.75rem',textDecoration:'none'}}>
+            <div style={{width:'40px',height:'40px',borderRadius:'0.5rem',background:'#d97706',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}>
+              <span style={{fontSize:'1.25rem'}}>🏷️</span>
+            </div>
+            <div style={{flex:1}}>
+              <p style={{fontSize:'0.8125rem',fontWeight:600,color:'#1c1917',margin:'0 0 2px'}}>エネチェンジ — 電気代を今すぐ安くする</p>
+              <p style={{fontSize:'0.6875rem',color:'#a8a29e',margin:0}}>乗り換えだけで月数千円節約できる</p>
+            </div>
+            <span style={{fontSize:'0.75rem',color:'#d97706',fontWeight:500,flexShrink:0}}>無料 →</span>
+          </a>
+
+          <p style={{fontSize:'0.625rem',color:'#d6d3d1',textAlign:'center',marginTop:'0.25rem'}}>※ 広告を含みます</p>
+        </div>
+
       </div>
       </div>
     </div>
